@@ -1,0 +1,229 @@
+﻿html {
+    position: relative;
+    min-height: 100%;
+}
+body {
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    display: block;
+    margin: 0 0 40px;
+    padding: 0;
+    width: 100%;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    height: 60px;
+    align-items: center;
+    padding: 0 20px 0 0;
+}
+
+.l_bar, .r_bar {
+    display: flex;
+    flex-direction: row;
+    padding: 0 2px;
+}
+
+.a0, .a1 {
+    padding: 0 8px;
+    line-height: 28px;
+}
+
+.a0i, .a1i {
+    opacity: 0.75;
+    color: #000;
+    text-decoration-line: none;
+}
+.a0i:hover{
+    opacity:1;
+    text-decoration-line: underline;
+}
+
+.a1i:hover{
+    opacity:1;
+    text-decoration-line: underline;
+}
+
+.a2, .a3 {
+    padding: 0 5px;
+}
+
+.a2 {
+    background-image: url(assets/spritesheet.png);
+    background-size: 528px 68px;
+    background-position: -132px -38px;
+    opacity: .55;
+    height: 30px;
+    width: 30px;
+}
+
+    .a2:hover {
+        cursor: pointer;
+        opacity: 1;
+    }
+
+.a3i {
+    color: #ffffff;
+    border: 1px solid #4285f4;
+    font-weight: bold;
+    outline: none;
+    background: -webkit-linear-gradient(top,#4387fd,#4683ea);
+    display: inline-block;
+    line-height: 28px;
+    padding: 0 12px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.a3i:active {
+        background: -webkit-linear-gradient(top,#3c7ae4,#3f76d3);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 120px 0 0 0;
+}
+
+.logo {
+    height: 92px;
+    width: 272px;
+    background-image: url(assets/logo.png);
+    background-repeat: no-repeat;
+    
+}
+.subtext {
+    color: #4285f4;
+    font: 16px/16px roboto-regular, arial, sans-serif;
+    padding-left: 215px;
+    position: relative;
+    top: 76px;
+    line-height: 16px;
+}
+
+.search{
+    padding: 35px 0 0 0;
+}
+
+.searchbar {
+    height: 44px;
+    width: 584px;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+    transition: box-shadow 200ms cubic-bezier(0.4, 0.0, 0.2, 1);
+    border-radius: 2px;
+    margin: 0 auto;
+    z-index: -1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.searchbar:hover{
+    box-shadow: 0 4px 4px 0px rgba(0,0,0,0.16), 0 0 0 2px rgba(0,0,0,0.08);
+}
+
+.textbox {
+    border: none;
+    outline: none;
+    height: 40px;
+    width: 530px;
+}
+
+.microphone {
+    background-image: url(assets/microphone.png);
+    background-repeat: no-repeat;
+    background-size: 24px 24px;
+    display: inline-block;
+    height: 24px;
+    width: 24px;
+    vertical-align: middle;
+    margin-top: 9px;
+    cursor: pointer;
+}
+
+.button0, .button1 {
+    background-color: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    border-radius: 2px;
+    color: #757575;
+    margin: 11px 4px;
+    min-width: 54px;
+    padding: 0 16px;
+    font-weight: bold;
+    height: 36px;
+    line-height: 27px;
+    margin: 30px 2px 11px 2px;
+}
+
+.button0:hover{
+    color: black;
+    border: 1px solid #aaa;
+}
+
+.button1:hover {
+     color: black;
+     border: 1px solid #aaa;
+}
+
+
+.languages {
+    margin: 10px 0px 24px 0px;
+}
+
+.languages * {
+        color: #1a0dab;
+        text-decoration: none;
+        line-height: 28px;
+        padding: 0 3px;
+
+}
+
+.languages *:hover {
+    text-decoration-line:underline;
+}
+
+footer {
+    background: #f2f2f2;
+    border-top: 1px solid #e4e4e4;
+    line-height: 40px;
+    min-width: 980px;
+    display: flex;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 40px;
+    width: 100%;
+}
+
+#l_fbar, #r_bar{
+    display: flex;
+}
+
+#l_fbar {
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 10px;
+}
+
+#r_fbar {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10px;
+}
+
+a[class*="f"] {
+    color: #666;
+    line-height: 40px;
+    text-decoration-line: none;
+    padding: 0 15px;
+}
+
+a[class*="f"]:hover{
+    text-decoration-line: underline;
+}
